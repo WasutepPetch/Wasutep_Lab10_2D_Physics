@@ -13,13 +13,17 @@ public class PlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        move Input = GetAxis("Horizontal");
+        move = Input.GetAxis("Horizontal");
         rb2d.linearVelocity = new Vector2(move * speed, rb2d.linearVelocity.y);
-    }
-    If { Input.GetButtonDown("Jump")){
-        rb2d.AddForce(new Vector2 (rb2d.linearVelocity.x, jumpForce ));
-        Debug.Log("Jump!");
-    }
+        
+        if (Input.GetButtonDown("Jump"))
+            {
+                rb2d.AddForce(new Vector2(rb2d.linearVelocity.x, jumpForce));
+                Debug.Log("Jump!");
+            }
+        }
+    
+}
 
 
 
