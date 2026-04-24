@@ -545,6 +545,7 @@ GameObject:
   - component: {fileID: 151575490}
   - component: {fileID: 151575493}
   - component: {fileID: 151575492}
+  - component: {fileID: 151575494}
   m_Layer: 0
   m_Name: Idle 0
   m_TagString: Untagged
@@ -712,6 +713,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &151575494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151575489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad8144a02e697af498b17c9221a12344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
 --- !u!1 &161400505
 GameObject:
   m_ObjectHideFlags: 0
